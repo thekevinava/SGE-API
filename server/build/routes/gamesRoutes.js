@@ -13,7 +13,7 @@ class GamesRoutes {
     config() {
         this.router.get('/', gamesController_1.default.list);
         this.router.get('/:id', gamesController_1.default.getOne);
-        this.router.post('/:id', gamesController_1.default.addGame);
+        this.router.post('/', gamesController_1.default.addGame);
         this.router.put('/:id', gamesController_1.default.updateGame);
         this.router.delete('/:id', gamesController_1.default.deleteGame);
     }
